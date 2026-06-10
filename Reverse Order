@@ -1,0 +1,11 @@
+num = int(input("Enter the number: "))
+count = 0
+new_num = num
+if new_num == 0:
+    count = 1
+else:
+    while new_num > 0:
+        new_num //= 10
+        count += 1
+
+print("The number of digits in this number is", count)
